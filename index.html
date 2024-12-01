@@ -95,7 +95,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         var originalIconClasses = []; // Armazenar as classes originais dos ícones
         var widget4 = document.getElementById('porcentagem');
 
-        var cooldown = 60; // Tempo de espera em segundos (1 minuto)
+        var cooldown = 20; // Tempo de espera em segundos (1 minuto)
         var countingDown = false;
         var interval; // Armazena o intervalo do countdown
 
@@ -122,7 +122,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             button.style.opacity = '0.5'; // Aplica opacidade ao botão
 
             // Gera porcentagem aleatória entre 93 e 99
-            var porcentagem = (Math.random() * (99 - 93) + 93).toFixed(2) + "%";
+            var porcentagem = "99.1%" //(Math.random() * (99 - 93) + 93).toFixed(2) + "%";
             widget4.innerHTML = porcentagem;
 
             // Mudar os ícones e aplicar as cores apenas a 4 ícones
